@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/m_home"
+        android:icon="@drawable/_427222"
+        android:title="Home" />
+    <item
+        android:id="@+id/m_profile"
+        android:icon="@drawable/kisspng_computer_icons_user_profile_avatar_profile_5ab9c9863999b2_7782008015221251902359"
+        android:title="profile" />
+    <item
+        android:id="@+id/m_activity"
+        android:icon="@drawable/_08801187_list_vector_icon_isolated_on_transparent_background_list_logo_concept"
+        android:title="MyActivity" />
+</menu>

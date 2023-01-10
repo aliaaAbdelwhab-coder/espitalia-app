@@ -34,9 +34,10 @@ public class Login extends AppCompatActivity {
 
     EditText Login_Email,Password;
     Button Login_bu;
-
+    TextView loginback;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
@@ -47,7 +48,18 @@ public class Login extends AppCompatActivity {
         loginbutton = (Button) findViewById(R.id.loginbutton);
 
         Login = findViewById(R.id.loginbutton);
+
+        loginback = findViewById(R.id.textView4);
+        loginback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this,choose.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
     private boolean validateEmail(){
         String emailInput =Login_Email.getEditableText().toString().trim();//have error here
         if(emailInput.isEmpty()){

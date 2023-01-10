@@ -5,116 +5,30 @@
     android:id="@+id/homepage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D5DCFF"
+    android:background="#C4E1FA"
     tools:context=".HomePage">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/header"
-        android:layout_width="416dp"
-        android:layout_height="75dp"
-        android:background="#4976FB"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/HomeFragment"
+        android:layout_width="407dp"
+        android:layout_height="674dp"
+        app:layout_constraintBottom_toTopOf="@+id/menuid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menuid"
+        android:layout_width="412dp"
+        android:layout_height="54dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="84dp"
-            android:layout_height="35dp"
-            android:text="back"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.075"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <Button
-        android:id="@+id/Clinic"
-        android:layout_width="139dp"
-        android:layout_height="96dp"
-        android:text="Clinic Visit"
-        android:textColor="#000000"
-        app:backgroundTint="#6B90FF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="139dp"
-        android:layout_height="96dp"
-        android:text="Pharmacy"
-        android:textColor="#000000"
-        app:backgroundTint="#6B90FF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259" />
-
-    <Button
-        android:id="@+id/Doctor"
-        android:layout_width="139dp"
-        android:layout_height="96dp"
-        android:text="Doctor Call"
-        android:textColor="#000000"
-        app:backgroundTint="#6B90FF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-    <Button
-        android:id="@+id/Home"
-        android:layout_width="139dp"
-        android:layout_height="96dp"
-        android:text="Home Visit"
-        android:textColor="#000000"
-        app:backgroundTint="#6B90FF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-    <Button
-        android:id="@+id/Procedures"
-        android:layout_width="139dp"
-        android:layout_height="96dp"
-        android:text="Procedures"
-        android:textColor="#000000"
-        app:backgroundTint="#6B90FF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.749" />
-
-    <Button
-        android:id="@+id/Lab"
-        android:layout_width="139dp"
-        android:layout_height="96dp"
-        android:text="Lab Tests"
-        android:textColor="#000000"
-        app:backgroundTint="#6B90FF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.749" />
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menu_bottom_nav" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
